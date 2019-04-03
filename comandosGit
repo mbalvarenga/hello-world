@@ -1,1 +1,15 @@
+pipeline {
+    agent any
 
+    stages {
+        stage ('Verificar status do git') {
+
+            steps {
+                git status
+                echo
+            }
+        }
+
+       
+    }
+}
