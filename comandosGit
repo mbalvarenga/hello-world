@@ -6,8 +6,9 @@ pipeline {
 
             steps {
                 git status
-                echo
+               
             }
+            echo
         }
 
        
