@@ -5,10 +5,11 @@ pipeline {
         stage ('Verificar status do git') {
 
             steps {
-                git status
-               
+                git status {
+                echo 
+                }
             }
-            echo
+            
         }
 
        
