@@ -1,0 +1,18 @@
+pipeline {
+  environment {
+    // environment variables and credential retrieval can be interspersed
+    SOME_VAR = "SOME VALUE"
+ 
+  }
+
+  agent any
+
+  stages {
+    stage("foo") {
+      steps {
+        // environment variables are not masked
+        sh 'echo "SOME_VAR is $SOME_VAR"'
+      }
+    }
+  }
+}
