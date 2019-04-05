@@ -1,6 +1,6 @@
 pipeline {
   agent any
-
+  git .md
   stages {
     stage("foo") {
       steps {
