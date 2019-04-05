@@ -4,7 +4,7 @@ pipeline {
     SOME_VAR = "SOME VALUE"
          var="http://www.terminalroot.com.br/"
          echo $var
-         echo ${#var}
+         echo ${var}
  
   }
 
